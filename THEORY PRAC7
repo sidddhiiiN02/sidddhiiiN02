@@ -1,0 +1,20 @@
+Theory:
+Maps are associative containers that store elements in a mapped fashion. Each element has a key value and a mapped
+value. No two mapped values can have same key values.
+Some basic functions associated with Map:
+begin() – Returns an iterator to the first element in the map
+end() – Returns an iterator to the theoretical element that follows last element in the map
+size() – Returns the number of elements in the map
+max_size() – Returns the maximum number of elements that the map can hold
+empty() – Returns whether the map is empty
+pair insert(keyvalue, mapvalue) – Adds a new element to the map
+erase(iterator position) – Removes the element at the position pointed by the iterator
+erase(const g)– Removes the key value „g‟ from the map
+clear() – Removes all the elements from the map
+Creating a Map in C++ STL
+Maps can easily be created using the following statement :
+map<key_type, value_tye> map_name;
+Copy
+This will create a map with key of type Key_type and value of type value_type. One thing which is to remembered is
+that key of a map and corresponding values are always inserted as a pair, you cannot insert only key or just a value in
+a map.
