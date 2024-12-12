@@ -14,7 +14,8 @@ int main()
 	int choice;
 	map<string,int>m;
 	map<string,int>::iterator i;
-	do{
+	do
+              {
 		cout<<"\n Main Menu";
 		cout<<"\n1. Insert an element";
 		cout<<"\n2. Display";
@@ -44,6 +45,7 @@ int main()
 		}
 		cout<<"\n Do you want to continue?(y/n): ";
 		cin>>ans;
-	}while(ans=='y' || ans=='Y');
+	}
+        while(ans=='y' || ans=='Y');
 	return 0;
 }
