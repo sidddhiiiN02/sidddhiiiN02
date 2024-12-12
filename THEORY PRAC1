@@ -1,0 +1,47 @@
+ALGORITHM
+1. Design a class Complex which represents the Complex Number data type.
+2. Create a custructor which creates the complex number 0+0i
+Complex(): real(0), imag(0){ }
+3. Use operator overloading to overload operator+ to add two complex numbers.
+Complex operator + (Complex c2)
+4. Use operator overloading to overload operator* to multiply two complex numbers.
+Complex operator * (Complex c3)
+5. Use operator overloading to overload operator<< and >> to print and read Complex Numbers.
+friend ostream& operator << (ostream &out, Complex &c); //overloading '<<' operator
+friend istream& operator >> (istream &in, Complex &c); //overloading '>>' operator
+Theory:
+C++ Class
+A class is the collection of related data and function under a single name. A C++ program can have any number of
+classes. When related data and functions are kept under a class, it helps to visualize the complex problem efficiently
+and effectively.
+Class is defined in C++ programming using keyword class followed by identifier(name of class). Body of class is
+defined inside curly brackets an terminated by semicolon at the end in similar way as structure.
+class class_name
+{
+// some data
+// some functions
+};
+Keyword private makes data and functions private and keyword public makes data and functions public. Private data
+and functions are accessible inside that class only whereas, public data and functions are accessible both inside and
+outside the class. This feature in is known as data hiding
+C++ Objects
+When class is defined, only specification for the object is defined. Object has same relationship to class as variable
+has with the data type. Objects can be defined in similary way as structure is defined.
+class_name variable name;
+Data Member & Data Functions
+The data within the class is known as data member. The function defined within the class is known as member
+function.Data members and member functions can be accessed in similar way the member of structure is accessed
+using member operator(.).
+object_name.data_memeber;
+Constructors:
+Constructors are the special type of member function that initialises the object automatically when it is created
+Compiler identifies that the given member function is a constructor by its name and return type. Constructor has
+same name as that of class and it does not have any return type.
+Operator Overloading:
+The meaning of operators are already defined and fixed for basic types like: int, float, double etc in C++ language.
+For example: If you want to add two integers then, + operator is used. But, for user-defined types(like: objects), you
+can define the meaning of operator, i.e, you can redefine the way that operator works. For example: If there are two
+objects of a class that contain string as its data member, you can use + operator to concatenate two strings. Suppose,
+instead of strings if that class contains integer data member, then you can use + operator to add integers. This feature
+in C++ programming that allows programmer to redefine the meaning of operator when they operate on class objects
+is known as operator overloading.
