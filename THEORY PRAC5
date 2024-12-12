@@ -1,0 +1,16 @@
+Algorithm:
+1. Create Template template <typename T>
+2. Create a function to perform sorting.
+void Sort(T* const array,int size){
+3. Create a function to display array
+void printarray(T* const array,int size)
+
+Templates are the foundation of generic programming, which involves writing code in a way that is independent of
+any particular type.
+A template is a blueprint or formula for creating a generic class or a function. The library containers like iterators and
+algorithms are examples of generic programming and have been developed using template concept.
+The general form of a template function definition is shown here:
+template <class type> ret-type func-name(parameter list)
+{
+// body of function
+}
