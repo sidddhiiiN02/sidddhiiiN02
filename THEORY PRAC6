@@ -1,0 +1,34 @@
+Theory:
+STL Container List:
+Array and Vector are contiguous containers, i.e they store their data on continuous memory, thus the insert operation
+at the middle of vector/array is very costly (in terms of number of operaton and process time) because we have to
+shift all the elements, linked list overcome this problem. Linked list can be implemented by using the list container.
+list<T> lst;
+Construct an empty list lst which can hold values of type T.
+list<T> lst(inIterBegin, inIterEnd);
+Construct lst containing values from the range[inIterBegin,inIterEnd) in another (not necessarily list) container, but
+whose component type is the same as the component type of lst.
+lst.begin()
+Return an iterator (or const_iterator) pointing to the first component of lst.
+lst.end()
+Return an iterator (or const_iterator) pointing to one-past-the-last component oflst.
+lst.rbegin()
+Return a reverse_iterator (or const_reverse_iterator) pointing to the last component of lst.
+lst.rend()
+Return a reverse_iterator (or const_reverse_iterator) pointing to one-before-the-first component of lst.
+lst.size()
+Return a value of type size_type giving the number of values currently in lst.
+lst.empty()
+Return true if lst is empty (contains zero values); otherwise return false.
+lst.insert(iter, val)
+Insert val into lst immediately before the value pointed to by iter, and return aniterator pointing at the new
+component with value val.
+lst.unique()
+Remove all but one of any group of consecutive components containing duplicate items.
+lst.merge(otherList)
+Merge the list contained in otherList with the invoking list and clear otherList. (Both lists are assumed to be ordered
+and the result is also ordered.)
+lst.reverse()
+Reverse the order of all components of a list.
+lst.sort()
+Sort the components of a list into ascending order.
