@@ -1,0 +1,16 @@
+Algorithm:
+1. Design a Base Class publication which contains fiels to store title and price..
+2. Design two derived classes to hold properties of Tape and Book respectively.
+3. Create a functions for getting data and putting data in the base class as well as in the derived class.
+4. Create main() program to test the book and tape classes by creating instances of them, asking the user to fill
+in data with getdata(), and then displaying the data with putdata()
+
+Inheritance
+Inheritance is the capability of one class to acquire properties and characteristics from another class. The class whose
+properties are inherited by other class is called the Parent or Base or Super class. And, the class which inherits
+properties of other class is called Child or Derived or Sub class. Inheritance makes the code reusable. When we
+inherit an existing class, all its methods and fields become available in the new class, hence code is reused.
+class Subclass_name : access_mode Superclass_name
+While defining a subclass like this, the super class must be already defined or atleast declared before the subclass
+declaration.Access Mode is used to specify, the mode in which the properties of superclass will be inherited into
+subclass, public, privtate orprotected
