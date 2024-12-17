@@ -29,15 +29,15 @@ int main()
 {
 	int i,A[Size];
 	float B[Size];
-	cout<<"\n\t\t Selection Sort \n";
-	cout<<"\n\t Handling Integer elements ";
+	cout<<"\n Selection Sort \n";
+	cout<<"\n Handling Integer elements ";
 	cout<<"\n How many elements are there ?";
 	cin>>n;
 	cout<<"\n Enter the integer elements\n";
 	for(i=0;i<n;i++)
 	cin>>A[i];
 	selection(A);
-	cout<<"\n\t Handling float elements ";
+	cout<<"\n Handling float elements ";
 	cout<<"\n How many elements are there ?";
 	cin>>n;
 	cout<<"\n Enter the float elements\n";
