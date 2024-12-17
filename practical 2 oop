@@ -4,11 +4,13 @@
 //database with suitable member functions for initializing and destroying the data viz constructor,
 //default constructor, Copy constructor, destructor, static member functions, friend class, this
 //pointer, inline code and dynamic memory allocation operators-new and delete.
-#include <string.h>
-#include <stdlib.h>
+#include<iostream>
+#include<string.h>
+#include<stdlib.h>
 using namespace std;
 
-class Student {
+class Student 
+{
 int roll;
 char name[15];
 char address[25];
@@ -20,7 +22,8 @@ char mobile_no[12];
 
 public:
 // Constructor
-Student() {
+Student() 
+{
 roll = 0;
 strcpy(name, "");
 strcpy(address, "");
@@ -33,7 +36,8 @@ strcpy(mobile_no, "");
 
 // Parameterized constructor
 Student(int roll, const char* name, const char* address, const char* class_name, const char*
-dob, const char* licno, const char* blood_gr, const char* mobile_no) {
+dob, const char* licno, const char* blood_gr, const char* mobile_no) 
+{
 this->roll = roll;
 strcpy(this->name, name);
 strcpy(this->address, address);
@@ -46,7 +50,8 @@ strcpy(this->mobile_no, mobile_no);
 }
 
 // Function to accept student details
-void accept() {
+void accept() 
+{
 cout << "\nEnter roll number: ";
 cin >> roll;
 cout << "Enter name: ";
@@ -68,7 +73,8 @@ cin.getline(mobile_no, 12);
 
 // Function to display student details
 
-void display() const {
+void display() const 
+{
 cout << "\nRoll: " << roll;
 cout << "\nName: " << name;
 cout << "\nAddress: " << address;
@@ -80,19 +86,23 @@ cout << "\nMobile No: " << mobile_no << endl;
 }
 };
 
-int main() {
+int main() 
+{
 int ch, n;
 Student students[20]; // Array to store student records
 
-while (true) {
+while (true) 
+{
 cout << "\nMenu\n1. Accept Student Details\n2. Display All Students\n3. Exit\nEnter Choice:";
 
 cin >> ch;
-switch (ch) {
+switch (ch) 
+{
 case 1:
 cout << "Enter number of students: ";
 cin >> n;
-for (int i = 0; i < n; i++) {
+for (int i = 0; i < n; i++) 
+{
 
 cout << "\nEntering details for Student " << (i + 1) << ":\n";
 students[i].accept();
@@ -100,7 +110,8 @@ students[i].accept();
 break;
 
 case 2:
-for (int i = 0; i < n; i++) {
+for (int i = 0; i < n; i++) 
+{
 cout << "\nDisplaying details of Student " << (i + 1) << ":\n";
 students[i].display();
 }
